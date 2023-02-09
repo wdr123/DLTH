@@ -18,3 +18,4 @@ test/
 *.sh
 DATA
 Experiments
+op_*
