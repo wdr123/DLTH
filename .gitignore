@@ -15,7 +15,7 @@ scripts
 .auto_run*
 .DS_Store
 test/
-*.sh
+#*.sh
 DATA
 Experiments
 op_*
