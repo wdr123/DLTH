@@ -98,7 +98,7 @@ parser.add_argument('--index_layer', type=str, default="numbers", choices=['numb
 parser.add_argument('--previous_layers', type=str, default='')
 parser.add_argument('--skip_layers', type=str, default="", help='layer id to skip when pruning')
 parser.add_argument('--lr_ft', type=str, default="{0:0.01,30:0.001,60:0.0001,75:0.00001}")
-parser.add_argument('--data_path', type=str, default="./data")
+parser.add_argument('--data_path', type=str, default="./DATA")
 parser.add_argument('--wg', type=str, default="filter", choices=['filter', 'channel', 'weight'])
 parser.add_argument('--pick_pruned', type=str, default='min', choices=['min', 'max', 'rand', 'iter_rand'], help='the criterion to select weights to prune')
 parser.add_argument('--reinit', type=str, default='', help='before finetuning, the pruned model will be reinited')

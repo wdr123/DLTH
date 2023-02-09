@@ -16,3 +16,5 @@ scripts
 .DS_Store
 test/
 *.sh
+DATA
+Experiments

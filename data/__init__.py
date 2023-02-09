@@ -12,7 +12,12 @@ class Data(object):
     def __init__(self, args):
         self.args = args
         loader = import_module("data.data_loader_%s" % args.dataset)
-        path = os.path.join(args.data_path, args.dataset)
+        if args.dataset == "tiny_imagenet":
+            dataset_name = "tinyimagenet"
+            path = os.path.join(args.data_path, dataset_name)
+        else:
+            path = os.path.join(args.data_path, args.dataset)
+
         train_set, test_set = loader.get_data_loader(path, args.batch_size)
         
         self.train_loader = DataLoader(train_set,

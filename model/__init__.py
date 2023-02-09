@@ -1,6 +1,6 @@
 from importlib import import_module
 from .vgg import vgg11, vgg13, vgg16, vgg19
-from .resnet_cifar10 import resnet56
+from .resnet_cifar10 import resnet56, resnet50, resnet101
 from .mlp import mlp_7_linear, mlp_7_relu
 
 def set_up_model(args, logger):
@@ -20,6 +20,8 @@ model_dict = {
     'mlp_7_linear': mlp_7_linear,
     'mlp_7_relu': mlp_7_relu,
     'resnet56': resnet56,
+    'resnet50': resnet50,
+    'resnet101': resnet101,
     'vgg11': vgg11,
     'vgg13': vgg13,
     'vgg16': vgg16,
