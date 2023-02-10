@@ -27,8 +27,8 @@ do
             error_file=$dir/$job_name.err
 
             echo $method "prune_rate=${prune}" $arch $dataset
-#            sbatch -J $job_name -o $out_file -e $error_file $job_file
-             bash $job_file
+            sbatch -J $job_name -o $out_file -e $error_file $job_file
+#             bash $job_file
           done
       done
   done
