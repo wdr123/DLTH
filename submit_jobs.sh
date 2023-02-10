@@ -9,7 +9,7 @@ mkdir -p $dir
 data_repo="cifar10 cifar100"
 arch_repo="resnet50 resnet101"
 #prune_rate=(0)
-prune_rate=(0.06 0.09 0.12 0.15)
+prune_rate=(0.94 0.91 0.88 0.85)
 methods="LTH L1_Iter RST_Iter"
 
 
