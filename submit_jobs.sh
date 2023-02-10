@@ -1,7 +1,7 @@
 #!/bin/bash
 base_job_name="DLTH"
 job_file="the_job.sh"
-identifier_name="pretrain"
+identifier_name="prune"
 dir="op_"$identifier_name
 mkdir -p $dir
 
